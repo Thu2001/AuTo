@@ -9,6 +9,7 @@ public class StartupOnBootUpReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+//        Hàm tự khởi dộng khi chạy lại thiết bị
         Log.v("aaaaaaaaaa","aaaaaaaaaaaaa");
         if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
             Intent intent2 = new Intent(context, MainActivity.class);
@@ -17,3 +18,6 @@ public class StartupOnBootUpReceiver extends BroadcastReceiver {
         }
     }
 }
+
+
+
